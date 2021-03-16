@@ -41,20 +41,20 @@ from .tokenization_utils import PreTrainedTokenizer
 from .tokenization_utils_base import BatchEncoding, PaddingStrategy
 
 
-if is_tf_available():
-    import tensorflow as tf
-    from .modeling_tf_auto import (
-        TFAutoModel,
-        TFAutoModelForSequenceClassification,
-        TFAutoModelForQuestionAnswering,
-        TFAutoModelForTokenClassification,
-        TFAutoModelWithLMHead,
-        TF_MODEL_WITH_LM_HEAD_MAPPING,
-        TF_MODEL_FOR_SEQUENCE_CLASSIFICATION_MAPPING,
-        TF_MODEL_FOR_TOKEN_CLASSIFICATION_MAPPING,
-        TF_MODEL_FOR_QUESTION_ANSWERING_MAPPING,
-        TFAutoModelForCausalLM,
-    )
+#if is_tf_available():
+#    import tensorflow as tf
+#    from .modeling_tf_auto import (
+#       TFAutoModel,
+#        TFAutoModelForSequenceClassification,
+#        TFAutoModelForQuestionAnswering,
+#       TFAutoModelForTokenClassification,
+#        TFAutoModelWithLMHead,
+#        TF_MODEL_WITH_LM_HEAD_MAPPING,
+#        TF_MODEL_FOR_SEQUENCE_CLASSIFICATION_MAPPING,
+#        TF_MODEL_FOR_TOKEN_CLASSIFICATION_MAPPING,
+#        TF_MODEL_FOR_QUESTION_ANSWERING_MAPPING,
+ #       TFAutoModelForCausalLM,
+ #   )
 
 if is_torch_available():
     import torch
