@@ -2362,9 +2362,10 @@ class ConversationalPipeline(Pipeline):
 SUPPORTED_TASKS = {
     "feature-extraction": {
         "impl": FeatureExtractionPipeline,
-        "tf": TFAutoModel if is_tf_available() else None,
+        #"tf": TFAutoModel if is_tf_available() else None,
         "pt": AutoModel if is_torch_available() else None,
-        "default": {"model": {"pt": "distilbert-base-cased", "tf": "distilbert-base-cased"}},
+        "default": {"model": {"pt": "distilbert-base-cased", #"tf": "distilbert-base-cased"
+                             }},
     },
     "sentiment-analysis": {
         "impl": TextClassificationPipeline,
