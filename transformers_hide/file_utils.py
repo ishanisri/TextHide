@@ -139,6 +139,9 @@ def is_torch_available():
 def is_tf_available():
     return False
 
+def is_datasets_available():
+    return True
+
 
 def is_torch_tpu_available():
     return _torch_tpu_available
