@@ -18,9 +18,9 @@
 import warnings
 from collections import OrderedDict
 
-from .configuration_utils import PretrainedConfig
-from .file_utils import add_start_docstrings
-from .utils import logging
+from configuration_utils import PretrainedConfig
+from file_utils import add_start_docstrings
+from utils import logging
 
 # Add modeling imports here
 from albert.modeling_tf_albert import (
@@ -65,8 +65,8 @@ from convbert.modeling_tf_convbert import (
     TFConvBertForTokenClassification,
     TFConvBertModel,
 )
-from ..ctrl.modeling_tf_ctrl import TFCTRLForSequenceClassification, TFCTRLLMHeadModel, TFCTRLModel
-from ..distilbert.modeling_tf_distilbert import (
+from ctrl.modeling_tf_ctrl import TFCTRLForSequenceClassification, TFCTRLLMHeadModel, TFCTRLModel
+from distilbert.modeling_tf_distilbert import (
     TFDistilBertForMaskedLM,
     TFDistilBertForMultipleChoice,
     TFDistilBertForQuestionAnswering,
@@ -74,8 +74,8 @@ from ..distilbert.modeling_tf_distilbert import (
     TFDistilBertForTokenClassification,
     TFDistilBertModel,
 )
-from ..dpr.modeling_tf_dpr import TFDPRQuestionEncoder
-from ..electra.modeling_tf_electra import (
+from dpr.modeling_tf_dpr import TFDPRQuestionEncoder
+from electra.modeling_tf_electra import (
     TFElectraForMaskedLM,
     TFElectraForMultipleChoice,
     TFElectraForPreTraining,
@@ -84,7 +84,7 @@ from ..electra.modeling_tf_electra import (
     TFElectraForTokenClassification,
     TFElectraModel,
 )
-from ..flaubert.modeling_tf_flaubert import (
+from flaubert.modeling_tf_flaubert import (
     TFFlaubertForMultipleChoice,
     TFFlaubertForQuestionAnsweringSimple,
     TFFlaubertForSequenceClassification,
@@ -92,7 +92,7 @@ from ..flaubert.modeling_tf_flaubert import (
     TFFlaubertModel,
     TFFlaubertWithLMHeadModel,
 )
-from ..funnel.modeling_tf_funnel import (
+from funnel.modeling_tf_funnel import (
     TFFunnelForMaskedLM,
     TFFunnelForMultipleChoice,
     TFFunnelForPreTraining,
