@@ -137,7 +137,7 @@ def is_torch_available():
 
 
 def is_tf_available():
-    return _tf_available
+    return False
 
 
 def is_torch_tpu_available():
