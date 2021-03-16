@@ -16,7 +16,7 @@
 A subclass of `Trainer` specific to Question-Answering tasks
 """
 
-from transformers import Trainer, is_datasets_available, is_torch_tpu_available
+from transformers_hide import Trainer, is_datasets_available, is_torch_tpu_available
 from transformers.trainer_utils import PredictionOutput
 
 
