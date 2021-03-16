@@ -33,7 +33,7 @@ from .file_utils import add_start_docstrings
 #    TFAlbertModel,
 #)
 #from .bart.modeling_tf_bart import TFBartForConditionalGeneration, TFBartModel
-from bert.modeling_tf_bert import (
+from .modeling_tf_bert import (
     TFBertForMaskedLM,
     TFBertForMultipleChoice,
     TFBertForNextSentencePrediction,
@@ -66,14 +66,6 @@ from bert.modeling_tf_bert import (
 #    TFConvBertModel,
 #)
 #from ctrl.modeling_tf_ctrl import TFCTRLForSequenceClassification, TFCTRLLMHeadModel, TFCTRLModel
-from distilbert.modeling_tf_distilbert import (
-    TFDistilBertForMaskedLM,
-    TFDistilBertForMultipleChoice,
-    TFDistilBertForQuestionAnswering,
-    TFDistilBertForSequenceClassification,
-    TFDistilBertForTokenClassification,
-    TFDistilBertModel,
-)
 #from dpr.modeling_tf_dpr import TFDPRQuestionEncoder
 #from electra.modeling_tf_electra import (
 #    TFElectraForMaskedLM,
@@ -135,7 +127,7 @@ from distilbert.modeling_tf_distilbert import (
 #from ..mt5.modeling_tf_mt5 import TFMT5ForConditionalGeneration, TFMT5Model
 #from ..openai.modeling_tf_openai import TFOpenAIGPTForSequenceClassification, TFOpenAIGPTLMHeadModel, TFOpenAIGPTModel
 #from ..pegasus.modeling_tf_pegasus import TFPegasusForConditionalGeneration, TFPegasusModel
-from ..roberta.modeling_tf_roberta import (
+from .modeling_tf_roberta import (
     TFRobertaForMaskedLM,
     TFRobertaForMultipleChoice,
     TFRobertaForQuestionAnswering,
@@ -149,7 +141,7 @@ from ..roberta.modeling_tf_roberta import (
 #    TFTransfoXLLMHeadModel,
 #    TFTransfoXLModel,
 #)
-from ..xlnet.modeling_tf_xlnet import (
+from .modeling_tf_xlnet import (
     TFXLNetForMultipleChoice,
     TFXLNetForQuestionAnsweringSimple,
     TFXLNetForSequenceClassification,
