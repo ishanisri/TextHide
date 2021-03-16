@@ -18,12 +18,12 @@
 import warnings
 from collections import OrderedDict
 
-from configuration_utils import PretrainedConfig
-from file_utils import add_start_docstrings
-from utils import logging
+from .configuration_utils import PretrainedConfig
+from .file_utils import add_start_docstrings
+#from utils import logging
 
 # Add modeling imports here
-from albert.modeling_tf_albert import (
+from .albert.modeling_tf_albert import (
     TFAlbertForMaskedLM,
     TFAlbertForMultipleChoice,
     TFAlbertForPreTraining,
@@ -32,7 +32,7 @@ from albert.modeling_tf_albert import (
     TFAlbertForTokenClassification,
     TFAlbertModel,
 )
-from bart.modeling_tf_bart import TFBartForConditionalGeneration, TFBartModel
+from .bart.modeling_tf_bart import TFBartForConditionalGeneration, TFBartModel
 from bert.modeling_tf_bert import (
     TFBertForMaskedLM,
     TFBertForMultipleChoice,
