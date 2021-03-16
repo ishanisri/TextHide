@@ -2393,60 +2393,71 @@ SUPPORTED_TASKS = {
        # "tf": TFAutoModelForQuestionAnswering if is_tf_available() else None,
         "pt": AutoModelForQuestionAnswering if is_torch_available() else None,
         "default": {
-            "model": {"pt": "distilbert-base-cased-distilled-squad", #"tf": "distilbert-base-cased-distilled-squad"},
+            "model": {"pt": "distilbert-base-cased-distilled-squad", #"tf": "distilbert-base-cased-distilled-squad"
+                     },
         },
     },
     "fill-mask": {
         "impl": FillMaskPipeline,
         #"tf": TFAutoModelWithLMHead if is_tf_available() else None,
         "pt": AutoModelForMaskedLM if is_torch_available() else None,
-        "default": {"model": {"pt": "distilroberta-base",# "tf": "distilroberta-base"}},
+        "default": {"model": {"pt": "distilroberta-base",# "tf": "distilroberta-base"
+                             }},
     },
     "summarization": {
         "impl": SummarizationPipeline,
        # "tf": TFAutoModelWithLMHead if is_tf_available() else None,
         "pt": AutoModelForSeq2SeqLM if is_torch_available() else None,
-        "default": {"model": {"pt": "sshleifer/distilbart-cnn-12-6", #"tf": "t5-small"}},
+        "default": {"model": {"pt": "sshleifer/distilbart-cnn-12-6", #"tf": "t5-small"
+                             }},
     },
     "translation_en_to_fr": {
         "impl": TranslationPipeline,
         #"tf": TFAutoModelWithLMHead if is_tf_available() else None,
         "pt": AutoModelForSeq2SeqLM if is_torch_available() else None,
-        "default": {"model": {"pt": "t5-base", #"tf": "t5-base"}},
+        "default": {"model": {"pt": "t5-base", #"tf": "t5-base"
+                             }},
     },
     "translation_en_to_de": {
         "impl": TranslationPipeline,
         #"tf": TFAutoModelWithLMHead if is_tf_available() else None,
         "pt": AutoModelForSeq2SeqLM if is_torch_available() else None,
-        "default": {"model": {"pt": "t5-base", #"tf": "t5-base"}},
+        "default": {"model": {"pt": "t5-base", #"tf": "t5-base"
+                             }},
     },
     "translation_en_to_ro": {
         "impl": TranslationPipeline,
        # "tf": TFAutoModelWithLMHead if is_tf_available() else None,
         "pt": AutoModelForSeq2SeqLM if is_torch_available() else None,
-        "default": {"model": {"pt": "t5-base", #"tf": "t5-base"}},
+        "default": {"model": {"pt": "t5-base", #"tf": "t5-base"
+                             }},
     },
     "text-generation": {
         "impl": TextGenerationPipeline,
         #"tf": TFAutoModelWithLMHead if is_tf_available() else None,
         "pt": AutoModelForCausalLM if is_torch_available() else None,
-        "default": {"model": {"pt": "gpt2", #"tf": "gpt2"}},
+        "default": {"model": {"pt": "gpt2", #"tf": "gpt2"
+                             }},
     },
     "zero-shot-classification": {
         "impl": ZeroShotClassificationPipeline,
         #"tf": TFAutoModelForSequenceClassification if is_tf_available() else None,
         "pt": AutoModelForSequenceClassification if is_torch_available() else None,
         "default": {
-            "model": {"pt": "facebook/bart-large-mnli", #"tf": "roberta-large-mnli"},
-            "config": {"pt": "facebook/bart-large-mnli", #"tf": "roberta-large-mnli"},
-            "tokenizer": {"pt": "facebook/bart-large-mnli",# "tf": "roberta-large-mnli"},
+            "model": {"pt": "facebook/bart-large-mnli", #"tf": "roberta-large-mnli"
+                     },
+            "config": {"pt": "facebook/bart-large-mnli", #"tf": "roberta-large-mnli"
+                      },
+            "tokenizer": {"pt": "facebook/bart-large-mnli",# "tf": "roberta-large-mnli"
+                         },
         },
     },
     "conversational": {
         "impl": ConversationalPipeline,
         #"tf": TFAutoModelForCausalLM if is_tf_available() else None,
         "pt": AutoModelForCausalLM if is_torch_available() else None,
-        "default": {"model": {"pt": "microsoft/DialoGPT-medium", #"tf": "microsoft/DialoGPT-medium"}},
+        "default": {"model": {"pt": "microsoft/DialoGPT-medium", #"tf": "microsoft/DialoGPT-medium"
+                             }},
     },
 }
 
